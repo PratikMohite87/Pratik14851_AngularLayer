@@ -1,0 +1,55 @@
+<div class="row mt-3">
+    <div class="col-4 d-flex justify-content-center">
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter Title">
+
+        <button type="submit" class="btn btn-light mb-2 text-dark">&#9998;</button>
+      </form>
+      <button type="submit" class="btn btn-light mb-2 text-dark ml-sm-2" (click)="createSection1()">&#9997;</button>
+    </div>
+
+    <div class="col-4 d-flex justify-content-center">
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter Title">
+
+        <button type="submit" class="btn btn-light mb-2 text-dark">&#9998;</button>
+      </form>
+      <button type="submit" class="btn btn-light mb-2 text-dark ml-sm-2" (click)="createSection2()">&#9997;</button>
+    </div>
+
+    <div class="col-4 d-flex justify-content-center">
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter Title">
+
+        <button type="submit" class="btn btn-light mb-2 text-dark">&#9998;</button>
+      </form>
+      <button type="submit" class="btn btn-light mb-2 text-dark ml-sm-2" (click)="createSection3()">&#9997;</button>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-4 d-flex align-content-start flex-wrap">
+        <div class="md-form ml-1 mb-2" *ngFor="let section of section1">            
+            <textarea id="form10" class="md-textarea form-control" rows="3"></textarea>
+            <button type="button" class="btn btn-light" style="font-size: 12px;color: green;">&#9989;</button>
+            <button type="button" class="btn btn-light ml-2" style="font-size: 12px;color: red;" (click)="removeFromSection1($event)">&#10006;</button>
+        </div>
+    </div>
+    <div class="col-4 d-flex align-content-start flex-wrap">
+        <div class="md-form ml-1 mb-2" *ngFor="let section of section2">
+            <textarea id="form10" class="md-textarea form-control" rows="3"></textarea>
+            <button type="button" class="btn btn-light" style="font-size: 12px;color: green;">&#9989;</button>
+            <button type="button" class="btn btn-light ml-2" style="font-size: 12px;color: red;" (click)="removeFromSection2($event)">&#10006;</button>
+        </div>
+    </div>
+    <div class="col-4 d-flex align-content-start flex-wrap">
+        <div class="md-form ml-1 mb-2" *ngFor="let section of section3">
+            <textarea id="form10" class="md-textarea form-control" rows="3"></textarea>
+            <button type="button" class="btn btn-light" style="font-size: 12px;color: green;">&#9989;</button>
+            <button type="button" class="btn btn-light ml-2" style="font-size: 12px;color: red;" (click)="removeFromSection3($event)">&#10006;</button>
+        </div>
+    </div>
+</div>
